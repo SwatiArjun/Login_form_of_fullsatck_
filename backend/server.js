@@ -15,8 +15,6 @@ app.use(cors())
 app.get('/api/test',(req,res)=>{
     res.status(200).json('server working fine')
 })
-
-
 app.use('/api',userroute)
 app.use('/api',productroute)
 app.use('/api',cartroute)
